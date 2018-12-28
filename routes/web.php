@@ -20,3 +20,6 @@ Route::get('/trainer/{id?}', 'TrainerController@prueba');
 Route::resource('/trainers','TrainerController2');
 
 Route::get('/trainers/create','TrainerController2@create');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
